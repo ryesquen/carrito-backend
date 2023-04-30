@@ -1,0 +1,17 @@
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\bin\Debug\net6.0\Carrito.Persistence.deps.json
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\bin\Debug\net6.0\Carrito.Persistence.dll
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\bin\Debug\net6.0\Carrito.Persistence.pdb
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\obj\Debug\net6.0\Carrito.Persistence.csproj.AssemblyReference.cache
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\obj\Debug\net6.0\Carrito.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\obj\Debug\net6.0\Carrito.Persistence.AssemblyInfoInputs.cache
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\obj\Debug\net6.0\Carrito.Persistence.AssemblyInfo.cs
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\obj\Debug\net6.0\Carrito.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\obj\Debug\net6.0\Carrito.Persistence.dll
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\obj\Debug\net6.0\refint\Carrito.Persistence.dll
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\obj\Debug\net6.0\Carrito.Persistence.pdb
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\obj\Debug\net6.0\ref\Carrito.Persistence.dll
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\bin\Debug\net6.0\Carrito.Application.dll
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\bin\Debug\net6.0\Carrito.Domain.dll
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\bin\Debug\net6.0\Carrito.Application.pdb
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\bin\Debug\net6.0\Carrito.Domain.pdb
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Persistence\obj\Debug\net6.0\Carrito.Persistence.csproj.CopyComplete

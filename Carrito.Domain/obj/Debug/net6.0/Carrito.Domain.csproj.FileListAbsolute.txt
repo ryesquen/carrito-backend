@@ -1,0 +1,14 @@
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Domain\bin\Debug\net6.0\Carrito.Domain.deps.json
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Domain\bin\Debug\net6.0\Carrito.Domain.runtimeconfig.json
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Domain\bin\Debug\net6.0\Carrito.Domain.dll
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Domain\bin\Debug\net6.0\Carrito.Domain.pdb
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Domain\obj\Debug\net6.0\Carrito.Domain.csproj.AssemblyReference.cache
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Domain\obj\Debug\net6.0\Carrito.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Domain\obj\Debug\net6.0\Carrito.Domain.AssemblyInfoInputs.cache
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Domain\obj\Debug\net6.0\Carrito.Domain.AssemblyInfo.cs
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Domain\obj\Debug\net6.0\Carrito.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Domain\obj\Debug\net6.0\Carrito.Domain.dll
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Domain\obj\Debug\net6.0\refint\Carrito.Domain.dll
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Domain\obj\Debug\net6.0\Carrito.Domain.pdb
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Domain\obj\Debug\net6.0\Carrito.Domain.genruntimeconfig.cache
+C:\Users\Renzo\Desktop\Practicas\Chamba\Carrito\Carrito.Domain\obj\Debug\net6.0\ref\Carrito.Domain.dll
