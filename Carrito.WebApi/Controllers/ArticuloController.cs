@@ -4,13 +4,15 @@ using Carrito.Application.Interfaces;
 using Carrito.Domain.Entities;
 using Carrito.Persistence.Repository;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Carrito.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
+    [EnableCors("_myAllowSpecificOrigins")]
     public class ArticuloController : ControllerBase
     {
         private readonly IArticuloRepository _articuloRepository;
@@ -21,7 +23,6 @@ namespace Carrito.WebApi.Controllers
             _mapper = mapper;
         }
         [HttpGet]
-        [Authorize(Roles = "Admin,Basic")]
         public async Task<ActionResult<List<ArticuloDto>>> GetAllArticulos()
         {
             var response = await _articuloRepository.GetAllArticulos();
