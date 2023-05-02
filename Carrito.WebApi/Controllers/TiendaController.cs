@@ -11,7 +11,7 @@ namespace Carrito.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class TiendaController : ControllerBase
     {
         private readonly ITiendaRepository _tiendaRepository;
@@ -64,7 +64,7 @@ namespace Carrito.WebApi.Controllers
             return CreatedAtRoute("GetTiendaById", new { id = tienda.Id }, _mapper.Map<TiendaDto>(tienda));
         }
         [HttpPut("{id:int}")]
-        public async Task<IActionResult> UpdateCliente(int id, [FromBody] TiendaDto tiendaDto)
+        public async Task<IActionResult> UpdateTienda(int id, [FromBody] TiendaDto tiendaDto)
         {
             if (tiendaDto is null || id != tiendaDto.Id) return BadRequest(tiendaDto);
             if (!ModelState.IsValid) { return BadRequest(ModelState); }

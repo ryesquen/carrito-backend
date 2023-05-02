@@ -68,7 +68,7 @@ namespace Carrito.WebApi.Controllers
             return CreatedAtRoute(nameof(GetArticuloById), new { id = articulo.Id }, _mapper.Map<ArticuloDto>(articulo));
         }
         [HttpPut("{id:int}")]
-        public async Task<IActionResult> UpdateCliente(int id, [FromBody] ArticuloDto articuloDto)
+        public async Task<IActionResult> UpdateArticulo(int id, [FromBody] ArticuloDto articuloDto)
         {
             if (articuloDto is null || id != articuloDto.Id) return BadRequest(articuloDto);
             if (!ModelState.IsValid) { return BadRequest(ModelState); }
@@ -84,7 +84,7 @@ namespace Carrito.WebApi.Controllers
             else return StatusCode(response.Status, response.Error);
         }
         [HttpDelete("{id:int}")]
-        public async Task<IActionResult> DeleteCliente(int id)
+        public async Task<IActionResult> DeleteArticulo(int id)
         {
             if (id == 0) { return BadRequest(); }
             var existe = await _articuloRepository.GetArticuloById(id);
