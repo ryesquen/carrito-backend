@@ -26,6 +26,7 @@
         {
             Status = 404;
             Error = message;
+            Exito = false;
         }
 
     }

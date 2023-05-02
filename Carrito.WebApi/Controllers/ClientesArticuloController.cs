@@ -10,7 +10,7 @@ namespace Carrito.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin,Basic")]
+    //[Authorize(Roles = "Admin,Basic")]
     public class ClientesArticuloController : ControllerBase
     {
         private readonly IClientesArticuloRepository _clientesArticuloRepository;

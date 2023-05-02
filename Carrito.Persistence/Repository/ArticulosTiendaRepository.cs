@@ -18,7 +18,10 @@ namespace Carrito.Persistence.Repository
             var response = new ResponseService<List<ArticulosTienda>>();
             try
             {
-                var list = await _carritoContext.ArticulosTiendas.ToListAsync();
+                var list = await _carritoContext.ArticulosTiendas
+                    .Include(b => b.Articulo)
+                    .Include(c => c.Tienda)
+                    .ToListAsync();
                 if (list is not null) response.Object = list;
                 else response.AddInternalServerError("Se produjo un error.");
             }

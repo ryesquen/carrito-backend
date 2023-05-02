@@ -10,19 +10,19 @@ namespace Carrito.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class ArticulosTiendaController : ControllerBase
     {
         private readonly IArticulosTiendaRepository _articulosTiendaRepository;
-        private readonly IClienteRepository _clienteRepository;
+        private readonly ITiendaRepository _tiendaRepository;
         private readonly IArticuloRepository _articuloRepository;
         private readonly IMapper _mapper;
-        public ArticulosTiendaController(IArticulosTiendaRepository articulosTiendaRepository, IClienteRepository clienteRepository, IArticuloRepository articuloRepository, IMapper mapper)
+        public ArticulosTiendaController(IArticulosTiendaRepository articulosTiendaRepository, IArticuloRepository articuloRepository, IMapper mapper, ITiendaRepository tiendaRepository)
         {
             _articulosTiendaRepository = articulosTiendaRepository;
-            _clienteRepository = clienteRepository;
             _articuloRepository = articuloRepository;
             _mapper = mapper;
+            _tiendaRepository = tiendaRepository;
         }
         [HttpGet]
         public async Task<ActionResult<List<ArticulosTiendaDto>>> GetAllArticulosTiendas()
@@ -58,9 +58,14 @@ namespace Carrito.WebApi.Controllers
         public async Task<IActionResult> InsertArticulosTienda([FromBody] ArticulosTiendaDto articulosTiendaDto)
         {
             if (articulosTiendaDto is null) return BadRequest(articulosTiendaDto);
-            var tienda = await _clienteRepository.GetClienteById(articulosTiendaDto.TiendaId);
+            var tienda = await _tiendaRepository.GetTiendaById(articulosTiendaDto.TiendaId);
             var articulo = await _articuloRepository.GetArticuloById(articulosTiendaDto.ArticuloId);
-            if (tienda is null || articulo is null) return BadRequest(articulosTiendaDto);
+            if (!tienda.Exito || !articulo.Exito) return BadRequest(
+                new
+                {
+                    tiendaError = tienda.Error,
+                    articuloError = articulo.Error
+                });
             var existe = await _articulosTiendaRepository.GetArticulosTiendaById(articulosTiendaDto.ArticuloId, articulosTiendaDto.TiendaId);
             if (existe.Object is null)
             {
@@ -80,7 +85,7 @@ namespace Carrito.WebApi.Controllers
                 return Ok(articulosTiendaDto);
             }
         }
-        [HttpDelete("{id:int}")]
+        [HttpDelete("{articuloId:int}/{tiendaId:int}")]
         public async Task<IActionResult> DeleteClientesArticulo(int articuloId, int tiendaId)
         {
             if (articuloId == 0 || tiendaId == 0) { return BadRequest(); }
